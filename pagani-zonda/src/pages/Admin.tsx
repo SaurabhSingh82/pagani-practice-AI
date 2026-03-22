@@ -20,7 +20,8 @@ export default function Admin() {
   useEffect(() => {
     const fetchInquiries = async () => {
       try {
-        const res = await fetch('http://localhost:5000/api/inquiries');
+        const baseUrl = import.meta.env.VITE_API_URL || '';
+        const res = await fetch(`${baseUrl}/api/inquiries`);
         if (!res.ok) throw new Error('Failed to fetch from server.');
         const data = await res.json();
         setInquiries(data.data || []);

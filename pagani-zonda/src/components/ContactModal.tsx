@@ -16,7 +16,8 @@ export default function ContactModal({ isOpen, onClose }: ContactModalProps) {
     setStatus('loading');
 
     try {
-      const res = await fetch('http://localhost:5000/api/contact', {
+      const baseUrl = import.meta.env.VITE_API_URL || '';
+      const res = await fetch(`${baseUrl}/api/inquiries`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
