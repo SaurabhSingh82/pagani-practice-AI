@@ -2,7 +2,7 @@
 
 A stunning, full-stack web application dedicated to the Pagani Zonda R. It features a modern, Awwwards-style design with cinematic scroll animations, a 3D car configurator, and a beautifully crafted frontend architecture.
 
-> **Note: This complete project was generated and developed using Advanced Agentic AI as a practice exercise.**
+> 
 
 ## 🏎️ Features
 - **Scrollytelling Experience**: A premium landing page featuring a 240-frame background image sequence controlled entirely by scroll position.
